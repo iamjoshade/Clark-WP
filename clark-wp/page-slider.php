@@ -259,7 +259,7 @@ get_header();
      			 <div class="container">
      			 <div class="row justify-content-center mt-5">
     			<div class="col-md-12 text-center ftco-animate fadeInUp ftco-animated">
-    				<p><a href="http://localhost:8888/clark/blog" class="btn btn-primary py-4 px-5">View All Post</a></p>
+    				<p><a href="http://clark.95media.co.uk/blog" class="btn btn-primary py-4 px-5">View All Post</a></p>
     			</div>
     		</div>
     	</div>
