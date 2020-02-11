@@ -69,7 +69,7 @@ $image = wp_get_attachment_image_src($image, 'full');
 
             <div class="about-author d-flex p-4 bg-dark">
               <div class="bio mr-5">
-                <?php echo get_avatar( get_the_author_meta( 'ID'), 500 ,); ?>			
+                <?php echo get_avatar( get_the_author_meta( 'ID'), 50 ); ?>			
               </div>
               <div class="desc">
                 <h3><?php the_author_posts_link(); ?></h3>

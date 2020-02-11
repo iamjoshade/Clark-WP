@@ -237,9 +237,9 @@ Class Clark_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
                       <h3 class="heading"><a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a></h3>
                 <?php if ( $show_date ) : ?>
                   <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> <?php echo esc_html(get_the_date()); ?></a></div>
-                    <div><a href="#"><span class="icon-person"></span> <?php echo esc_html( get_the_author());?></a></div>
-                     <div><a href="#"><span class="icon-chat"></span> <?php echo esc_html( get_comments_number($post->ID));?></a></div>
+                    <div><span class="icon-calendar"></span> <?php echo esc_html(get_the_date()); ?></div>
+                    <div><span class="icon-person"></span> <?php echo esc_html( get_the_author());?></div>
+                    <div><span class="icon-chat"></span> <?php echo esc_html( get_comments_number($post->ID));?></div>
                     </div>
                 <?php endif; ?>
                   </div>
