@@ -29,7 +29,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php clark_wp_post_thumbnail('blog-post'); ?>
+	<?php the_post_thumbnail('blog-post'); ?>
 
 	<div class="entry-content">
 		<?php

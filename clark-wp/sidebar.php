@@ -15,5 +15,3 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <div class="col-lg-4 ftco-animate widget-area">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
-
-</section>

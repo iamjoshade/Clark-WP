@@ -67,7 +67,7 @@ if ( ! function_exists( 'clark_wp_setup' ) ) :
 			'caption',
 		) );
         
-        add_theme_support('blog-post', 800, 533, array('center', 'center'));
+        add_image_size('blog-post', 750, 533, array('center', 'center'));
 
 		/**
 		 * Add support for core custom logo.

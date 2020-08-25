@@ -48,7 +48,7 @@ $image = wp_get_attachment_image_src($image, 'full');
 
             <?php 
 		if( has_post_thumbnail() ):
-			the_post_thumbnail( 'clark-wp-blog', array( 'class' => 'img-fluid' ) );
+			the_post_thumbnail( 'blog-post', array( 'class' => 'img-fluid' ) );
 		endif;?>
             <div class="blog-content mt-4">
             <?php the_content();?>
