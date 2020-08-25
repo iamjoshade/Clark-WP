@@ -4,7 +4,7 @@ Theme URI: http://clark.95media.co.uk
 Author: 95media Web Solutions
 Author URI: https://www.95media.co.uk
 Description: A free one-page resume Theme
-Version: 1.0.3
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: clark-wp
@@ -9943,7 +9943,6 @@ h1, h2, h3, h4, h5,
 
 .ftco-hireme {
   background-color: #ffbd39 !important;
-  z-index: -9999;
 }
 
 .ftco-hireme a{z-index:2;}
@@ -10301,8 +10300,8 @@ a.instagram {
   opacity: 0; }
 
 #section-counter {
-  position:inherit;
-  z-index: -1; }
+  z-index: 1; 
+}
 
 @media (max-width: 1199.98px) {
   .ftco-counter {
