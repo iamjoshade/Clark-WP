@@ -41,8 +41,7 @@ $image = wp_get_attachment_image_src($image, 'full');
       <div class="container">
         <div class="row">
         	<?php
-		while ( have_posts() ) :
-			the_post(); ?>
+		while ( have_posts() ) :the_post(); global $post;?>
 
           <div class="col-lg-8 ftco-animate">
             <h2 class="mb-3"><?php the_title();?></h2>
@@ -69,11 +68,11 @@ $image = wp_get_attachment_image_src($image, 'full');
 
             <div class="about-author d-flex p-4 bg-dark">
               <div class="bio mr-5">
-                <?php echo get_avatar( get_the_author_meta( 'ID'), 50 ); ?>			
+                <?php echo get_avatar(get_author_posts_url($post->post_author), 90, '', false, array('class' => 'img-circle'));?>		
               </div>
               <div class="desc">
                 <h3><?php the_author_posts_link(); ?></h3>
-                <p><?php the_author_meta('description') ?></p>
+                <p><?php echo get_the_author_meta('description');?></p>
               </div>
             </div>
 

@@ -66,15 +66,8 @@ if ( ! function_exists( 'clark_wp_setup' ) ) :
 			'gallery',
 			'caption',
 		) );
-
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'clark_wp_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
-
-		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+        
+        add_theme_support('blog-post', 800, 533, array('center', 'center'));
 
 		/**
 		 * Add support for core custom logo.
@@ -116,7 +109,7 @@ function clark_wp_widgets_init() {
 		'name'          => esc_html__( 'Clark WP Sidebar', 'clark-wp' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add Sidebar Widgets Here.', 'clark-wp' ),
-		'before_widget' => '<div class="sidebar-box widget %2$s">',
+		'before_widget' => '<div class="sidebar-box %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="heading-sidebar">',
 		'after_title'   => '</h3>',
@@ -913,10 +906,10 @@ function custom_breadcrumbs() {
        
 }
 
-function clark_body_class($classes){
+function mbe_body_class($classes){
     if(is_user_logged_in()){
         $classes[] = 'body-logged-in';
     }
     return $classes;
 }
-add_filter('body_class', 'clark_body_class');
+add_filter('body_class', 'mbe_body_class');
