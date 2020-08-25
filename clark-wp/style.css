@@ -699,6 +699,8 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+body.body-logged-in .navbar-expand-lg{ top: 30px !important; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
