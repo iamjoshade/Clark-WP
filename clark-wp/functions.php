@@ -906,10 +906,10 @@ function custom_breadcrumbs() {
        
 }
 
-function mbe_body_class($classes){
+function clark_body_class($classes){
     if(is_user_logged_in()){
         $classes[] = 'body-logged-in';
     }
     return $classes;
 }
-add_filter('body_class', 'mbe_body_class');
+add_filter('body_class', 'clark_body_class');
